@@ -1,0 +1,127 @@
+.contacto-container {
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+.form-button {
+    padding: 10px;
+    background-color: #54ef5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #ffaf53;
+}
+
+.contacto-main {
+    background-image: url('http://127.0.0.1:8000/media/imagenes/fondo_form.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    padding-top: 70px;
+}
+
+.form-contact {
+    border: 3px solid black;
+    border-radius: 13px;
+    width: 600px; /* Ajusta el ancho máximo */
+    margin: 20px auto; /* Añade espacio arriba y abajo */
+    padding: 20px; /* Espacio interno para evitar que el texto se pegue a los bordes */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+    align-self: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.confirmation-message {
+    background-color: white; /* Fondo blanco para el mensaje */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el efecto de profundidad */
+    max-width: 400px; /* Ancho máximo del modal */
+    width: 90%; /* Ancho responsivo */
+}
+
+.confirmation-message button {
+    margin-top: 10px;
+}
+
+.msg-to-user{
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .form-contact {
+        width: 90%; /* Ampliar en pantallas más pequeñas */
+        padding: 15px; /* Ajusta el padding */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contacto-container {
+        padding: 15px;
+    }
+
+    .contacto-title {
+        font-size: 1.5rem;
+    }
+
+    .form-button {
+        font-size: 14px;
+    }
+}

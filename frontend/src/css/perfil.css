@@ -1,0 +1,57 @@
+.perfil-section {
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 15px;
+    max-width: 800px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.perfil-header {
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.perfil-details-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y la info */
+}
+
+.perfil-image {
+    width: 400px; /* Ancho de la imagen */
+    height: 400px; /* Alto de la imagen */
+    margin-right: 20px; /* Espacio entre la imagen y la info */
+}
+
+.perfil-data {
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 800px) {
+    .perfil-section {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra el contenido */
+        width: 50%;
+    }
+
+    .perfil-details-container {
+        flex-direction: column; /* Cambia a columna */
+        align-items: center; /* Centra la imagen y los datos */
+        text-align: center; /* Alinea texto al centro */
+    }
+
+    .perfil-image {
+        width: 100%; /* Ancho completo en dispositivos pequeños */
+        height: auto; /* Mantiene la proporción */
+        margin: 0 0 20px 0; /* Espacio inferior */
+    }
+
+    .perfil-data {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+    }
+}

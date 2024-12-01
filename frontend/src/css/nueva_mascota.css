@@ -1,0 +1,56 @@
+.formulario-nueva-mascota {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el formulario */
+    padding: 20px;
+    background-image: url('http://127.0.0.1:8000/media/imagenes/fondo.jpg'); /* Asegúrate de ajustar la ruta según la ubicación */
+    background-size: cover; /* Para cubrir toda el área */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Evita repetir la imagen */
+}
+
+.Titulo-nueva-mascota {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+
+.formulario-mascota { 
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+    max-width: 500px; /* Ancho máximo del formulario */
+}
+
+.form{
+    border: 5px solid gray;
+    border-radius: 30px ;
+    background: linear-gradient(135deg, #b2e0f8, #a0d4e7);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los campos */
+}
+
+.form-control {
+    width: 100%; /* Hace que el input ocupe todo el ancho disponible */
+    padding: 10px;
+    border: 3px solid #4a4a4a; /* Color gris casi negro */
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%; /* Botón ocupa todo el ancho */
+}
+ 

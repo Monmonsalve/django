@@ -1,0 +1,50 @@
+.adopcion-form {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: auto; /* Centrar el formulario */
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.main-adopcion {
+    background-image: url("http://127.0.0.1:8000/media/imagenes/adopcion-fondo.jpg");
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%; /* Ancho al 100% */
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre los grupos de formulario */
+}
+
+.form-label {
+    display: block; /* Hacer que el label ocupe toda la línea */
+    font-weight: bold; /* Negrita para el label */
+    margin-bottom: 5px; /* Espacio debajo del label */
+    text-align: justify;
+}
+
+.input-container {
+    align-items: center; /* Alinear verticalmente */
+}
+
+.form-input {
+    flex: 1; /* Ocupa el espacio restante */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde ligero */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.btn:hover {
+    background-color: #dd7403; /* Color de fondo al pasar el ratón */
+}
+
+.date-picker-container {
+    display: flex;
+    flex-direction: column; /* Coloca el label y el input en columna */
+}

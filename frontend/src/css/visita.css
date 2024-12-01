@@ -1,0 +1,77 @@
+.agendar-visita {
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.main-content {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.advertencia {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-visita {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.date-input {
+    margin: 0 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.confirm-checkbox {
+    margin-right: 10px;
+}
+
+.request-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.request-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    .main-content {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .request-button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,109 @@
+.Logotipo{
+    width: 300px;
+    height: 100px;
+    position: relative;
+    align-self: auto;
+}
+
+.bottom-header {
+    display: flex; /* Usamos Flexbox */
+    justify-content: center; /* Centra los botones */
+    background-color: #f8f9fa; /* Color de fondo para los botones */
+    padding: 10px 0; /* Espaciado superior e inferior */
+    margin: 0; /* Elimina el margen */
+}
+
+.Button-btn-header {
+    margin: 0 ; /* Espaciado horizontal entre botones */
+    margin-right: 5px;
+    padding: 10px 15px; /* Espaciado interno del botón */
+    background-color: #a2ee8c; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.Button-btn-header:hover {
+    background-color: #f6bb18; /* Color de fondo al pasar el ratón */
+}
+
+.header-container {
+    display: flex;          /* Usa Flexbox para el layout */
+    align-items: center;   /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacia los elementos */
+    padding: 10px;        /* Espaciado interno */
+  }
+
+.userWelcome{
+    display: flex;          /* Usa Flexbox para el layout */
+    align-items: center;
+    margin: 0;
+    margin-right: 10px;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .bottom-header {
+        font-size: xx-small;
+    }
+
+    .Button-btn-header {
+        flex-direction: row; /* Asegura que los botones se alineen horizontalmente en pantallas pequeñas */
+        width: 19%;
+        text-align:  justify;
+    }
+}
+
+.eventos-container {
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+    overflow: hidden; /* Oculta las imágenes fuera del contenedor */
+  }
+  .eventos-slider {
+    display: flex; /* Alinea las imágenes en una fila */
+    transition: transform 1.5s ease; /* Transición suave para el cambio de imágenes */
+  }
+  
+  .event {
+    flex: 0 0 100%; /* Hace que cada imagen ocupe el 100% del ancho del contenedor */
+    position: relative;
+  }
+  
+  /* Ajustar altura de las imágenes en dispositivos móviles */
+  /* Asegúrate de que las imágenes ocupen el 100% del ancho */
+.event-image {
+  width: 100%;
+  object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+  height: 700px; /* Establece una altura consistente para computadoras */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .event-image {
+    height: 400px; /* Disminuye la altura en pantallas pequeñas */
+    max-height: 400px;
+  }
+}
+
+/* Media Query para pantallas muy grandes o grandes */
+@media (min-width: 1200px) {
+  .event-image {
+    width: 100%;
+    height: 700px; /* Aumenta la altura en pantallas grandes */
+    max-width: 100%;
+    max-height: 700px;
+  }
+  .carousel{
+    height: 700px;
+  }
+}
+
+  .event-title {
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  

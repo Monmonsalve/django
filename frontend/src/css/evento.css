@@ -1,0 +1,68 @@
+/* Estilos generales para el contenedor del evento */
+.evento-container {
+    max-width: 80%; /* Ancho máximo */
+    margin: 20px auto; /* Centrado horizontal */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Bordes suaves */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el título del evento */
+.eventoi-titulo {
+    font-size: 2em; /* Tamaño de fuente grande */
+    margin-bottom: 15px; /* Espaciado inferior */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilo para la imagen del evento */
+.evento-img {
+    width: 300px; /* Ancho de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 15px auto; /* Espaciado vertical y centra la imagen horizontalmente */
+    display: block; /* Cambia a block para que el margen automático funcione */
+}
+
+
+.evento-descripcion {
+    font-size: 1.2em; /* Tamaño de fuente */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    color: #555; /* Color del texto */
+    text-align: justify; /* Justificado para un mejor aspecto */
+    margin: 20px 0; /* Espaciado superior e inferior */
+    padding: 15px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo suave */
+    border-radius: 8px; /* Bordes redondeados */
+    border-left: 5px solid #4CAF50; /* Bordes izquierdos para resaltar */
+}
+
+.evento-descripcion p {
+    margin-bottom: 30px; /* Espacio inferior entre párrafos */
+}
+
+/* Resaltar el texto en negrita */
+.evento-descripcion strong {
+    color: #4CAF50; /* Color diferente para el texto destacado */
+    font-weight: bold; /* Negrita */
+}
+
+@media (max-width: 768px) {
+    .evento-container {
+        padding: 15px; /* Menos espaciado en pantallas pequeñas */
+    }
+
+    .evento-img{
+        width: 80%;
+    }
+
+    .eventoi-titulo {
+        font-size: 1.8em; /* Tamaño de fuente más pequeño para el título */
+    }
+
+    .evento-descripcion {
+        font-size: 1em; /* Tamaño de fuente más pequeño para la descripción */
+    }
+}

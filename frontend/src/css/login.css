@@ -1,0 +1,180 @@
+.login{
+    border: 1px solid black;
+    width: 400px;
+    height: 600px;
+    color:  white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.formulario {
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+.login-register{
+    margin-top: 10px;
+}
+
+.title-f {
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 60px;
+    color: white;
+}
+
+.main-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el formulario */
+    padding: 20px;
+    background-image: url('http://127.0.0.1:8000/media/imagenes/fondo_login.jpg'); /* Asegúrate de ajustar la ruta según la ubicación */
+    background-size: cover; /* Para cubrir toda el área */
+    background-position: center; /* Para centrar la imagen */
+    background-repeat: no-repeat; /* Evita repetir la imagen */
+}
+
+.info-message {
+    color: red; /* O cualquier color que prefieras */
+    margin: 20px;
+    font-size: small;
+    text-align: justify;
+}
+
+
+.label{
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.login-input {
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.button-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; 
+    color: white; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.button-login{
+    background: rgba(45, 126, 231);
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.login-register{
+    font-size: medium;
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .login {
+        width: 90%; /* Hacer el formulario más pequeño en dispositivos móviles */
+        height: auto; /* Ajustar la altura automáticamente */
+    }
+
+    .formulario {
+        padding: 20px; /* Reducir el padding */
+    }
+
+    .title-f {
+        font-size: 20px; /* Hacer el título más pequeño */
+        margin-bottom: 40px; /* Reducir el margen inferior */
+    }
+
+    .login-input {
+        font-size: 14px; /* Hacer el texto de los inputs más pequeño */
+    }
+
+    .button-login {
+        padding: 12px; /* Aumentar el tamaño del botón */
+    }
+
+    .login-register {
+        font-size: small; /* Hacer más pequeño el texto */
+    }
+}
+
+/* Pantallas medianas (tabletas) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .login {
+        width: 75%; /* Ajustar el ancho del formulario */
+    }
+
+    .title-f {
+        font-size: 22px; /* Ajustar el tamaño del título */
+        margin-bottom: 50px; /* Ajustar el margen */
+    }
+
+    .button-login {
+        padding: 12px; /* Ajustar el tamaño del botón */
+    }
+}
+
+/* Pantallas grandes (escritorios) */
+@media (min-width: 768px) {
+    .login {
+        width: 400px; /* El tamaño del formulario es más grande */
+    }
+
+    .formulario {
+        padding: 40px; /* Mantener el padding amplio */
+    }
+
+    .title-f {
+        font-size: 24px; /* Título más grande */
+        margin-bottom: 60px; /* Margen más amplio */
+    }
+
+    .login-input {
+        font-size: 16px; /* Fuente más grande en escritorio */
+    }
+
+    .button-login {
+        padding: 15px; /* Botón más grande en escritorio */
+    }
+}
+
+.button-container {
+    display: flex; /* Usamos flexbox para alinear los botones */  
+}
+
+.button-container .btn {
+    margin: 0; /* Elimina los márgenes */
+    background-color: #40c7c7; /* Color de fondo para los botones */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno para los botones */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+
+.button-container .btn:hover {
+    background-color: #b52afb; /* Color al pasar el mouse por encima */
+}
