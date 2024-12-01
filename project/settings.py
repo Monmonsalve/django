@@ -103,12 +103,12 @@ WSGI_APPLICATION = 'project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'nombre_base_de_datos',  # Aquí debes colocar el nombre de tu base de datos.
-        'USER': 'root',
-        'PASSWORD': 'vesi81SOfovisibility_off',  # Tu contraseña
-        'HOST': 'vps-4565817-x.dattaweb.com',  # O la IP: '149.50.135.137'
-        'PORT': '3306',  # El puerto correcto de MySQL.
+        'ENGINE': 'django.db.backends.mysql',  # Usamos MySQL como backend
+        'NAME': 'djangoBase',                  # El nombre de la base de datos
+        'USER': 'django',                      # El usuario que acabamos de crear
+        'PASSWORD': 'vesi81SOfo',              # La contraseña del usuario
+        'HOST': 'localhost',                   # O la IP de tu servidor de base de datos
+        'PORT': '3306',                        # El puerto MySQL por defecto
     }
 }
 
