@@ -54,10 +54,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'agrupcolitasfelices.com', 'www.agrupcolitasfelices.com',  # URL de tu frontend
     "https://agrupcolitasfelices.com",
     "https://www.agrupcolitasfelices.com",
 ]
+
 ROOT_URLCONF = 'project.urls'
 AUTH_USER_MODEL = 'api.User'
 
